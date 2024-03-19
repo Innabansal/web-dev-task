@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Task</title>
+    <style>
+        hr {
+            border: 1px dashed purple;
+            width: 50%;
+            margin: auto;
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .team-section {
+            width: 100%;
+
+        }
+
+        .team-section .container {
+            width: 70%;
+            margin: auto;
+            border: 1px solid black;
+        }
+
+        /*Heading starts*/
+        .team-section .container .row {
+            width: 60%;
+            margin: auto;
+        }
+
+        .team-section .container .row .title {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .team-section .container .row .title h1 {
+            font-size: 35px;
+            color: whitesmoke;
+            letter-spacing: 1.0px;
+            border: 1px solid #fafafa;
+            background-color: #CE33EA;
+            padding: 5px 10px;
+            margin: 0px 80px;
+            border-radius: 10px 10px 10px 10px;
+        }
+
+        .team-section .container .row .title p {
+            font-size: 18px;
+            margin: 30px 0px;
+            color: black;
+        }
+
+        /*Heading ends*/
+        /*Meet my team starts*/
+        .team-section .container .team-meet {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .team-section .container .team-meet h3 {
+            font-size: 30px;
+            letter-spacing: 1.0px;
+        }
+
+        .team-section .container .team-meet h2 {
+            font-size: 30px;
+            margin: 5px 270px;
+            color: whitesmoke;
+            padding: 7px 0px 7px 0px;
+            letter-spacing: 1.0px;
+            border: 1px solid #fafafa;
+            background-color: #CE33EA;
+            border-radius: 10px 10px 10px 10px;
+        }
+
+        /*Meet my team ends*/
+        /*Team Description starts*/
+        .team-section .container .team-card {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 40px;
+            margin-top: 50px;
+        }
+
+        .one {
+            margin-left: 26%;
+        }
+
+        .second {
+            margin-left: 15%;
+        }
+
+        .team-section .container .team-card .card {
+            width: 100%;
+            background-color: #fafafa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .team-section .container .team-card .card .image-section img {
+            height: 120px;
+            width: 120px;
+            border-radius: 50%;
+            border: 6px solid #fff;
+        }
+
+        .team-section .container .team-card .card .content {
+            width: 100%;
+            text-align: center;
+        }
+
+        .team-section .container .team-card .card .content h3 {
+            font-size: 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            letter-spacing: 1.5px;
+        }
+
+        /*Flag design*/
+        .flag-container {
+            display: flex;
+            align-items: left;
+        }
+
+        .flag-container .flag {
+            width: 120px;
+            height: 60px;
+            background-color: #CE33EA;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%, 15% 50%);
+            position: absolute;
+            right: 222px;
+        }
+
+        .flag4 {
+            width: 120px;
+            height: 60px;
+            background-color: #CE33EA;
+            /* Red color for the flag */
+            clip-path: polygon(0 0, 100% 0, 85% 50%, 100% 100%, 0% 100%);
+            bottom: 10px;
+            left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="team-section">
+        <div class="container">
+            <div class="row">
+                <div class="flag-container">
+                    <div class="flag"></div>
+                </div>
+                <div class="title">
+                    <h1>Inns Co. & Services</h1>
+                    <p>Welcome to our Company, where a dedicated team of professionals works together to bring
+                        innovation, creativity and expertise to a software industry, get to know the individuals
+                        who make our company thrive. </p>
+                </div>
+            </div>
+            <hr>
+            <div class="team-meet">
+                <h3>Meet Our Team</h3><br>
+                <h2>Leadership/Management Team</h2>
+            </div>
+            <div class="team-card one">
+                <div class="card">
+                    <div class="image-section">
+                        <img src="pic1.jpg">
+                    </div>
+                    <div class="content">
+                        <h3>Inna Bansal</h3>
+                        <p>Founder/CEO</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image-section">
+                        <img src="pic1.jpg">
+                    </div>
+                    <div class="content">
+                        <h3>Tanisha</h3>
+                        <p>Founder/CEO</p>
+                    </div>
+                </div>
+            </div>
+            <div class="team-card second">
+                <div class="card">
+                    <div class="image-section">
+                        <img src="pic1.jpg">
+                    </div>
+                    <div class="content">
+                        <h3>Tanuj</h3>
+                        <p>VP, Development & Growth</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image-section">
+                        <img src="pic1.jpg">
+                    </div>
+                    <div class="content">
+                        <h3>Priyanka</h3>
+                        <p>VP, Sales & marketing</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image-section">
+                        <img src="pic1.jpg">
+                    </div>
+                    <div class="content">
+                        <h3>Justin</h3>
+                        <p>VP,Finance & Operation</p>
+                    </div>
+                </div>
+            </div>
+            <div class="team-meet">
+                <div class="flag4"></div>
+                <h2>Developer Team</h2>
+            </div>
+            <div class="team-card">
+                <div class="card">
+                    <div class="image-section">
+                        <img src="pic1.jpg">
+                    </div>
+                    <div class="content">
+                        <h3>Rohan</h3>
+                        <p>Team Lead, SE</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image-section">
+                        <img src="pic1.jpg">
+                    </div>
+                    <div class="content">
+                        <h3>Abhay</h3>
+                        <p>Software Engineer</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image-section">
+                        <img src="pic1.jpg">
+                    </div>
+                    <div class="content">
+                        <h3>Eva</h3>
+                        <p>Software Engineer</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image-section">
+                        <img src="pic1.jpg">
+                    </div>
+                    <div class="content">
+                        <h3>Lucas</h3>
+                        <p>Software Engineer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="team-card second">
+                <div class="card">
+                    <div class="image-section">
+                        <img src="pic1.jpg">
+                    </div>
+                    <div class="content">
+                        <h3>Sam</h3>
+                        <p>Software Engineer</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image-section">
+                        <img src="pic1.jpg">
+                    </div>
+                    <div class="content">
+                        <h3>Ruhanika</h3>
+                        <p>Software Engineer</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image-section">
+                        <img src="pic1.jpg">
+                    </div>
+                    <div class="content">
+                        <h3>Gunika</h3>
+                        <p>Software Engineer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flag-container">
+                <div class="flag"></div>
+            </div>
+            <div class="team-meet">
+                <h2>Sales & Marketing Team</h2>
+            </div>
+            <div class="team-card">
+                <div class="card">
+                    <div class="image-section">
+                        <img src="pic1.jpg">
+                    </div>
+                    <div class="content">
+                        <h3>Kashish</h3>
+                        <p>Team Lead</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image-section">
+                        <img src="pic1.jpg">
+                    </div>
+                    <div class="content">
+                        <h3>Yogesh</h3>
+                        <p>Sales Officer</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image-section">
+                        <img src="pic1.jpg">
+                    </div>
+                    <div class="content">
+                        <h3>Vidushi</h3>
+                        <p>Sales Officer</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image-section">
+                        <img src="pic1.jpg">
+                    </div>
+                    <div class="content">
+                        <h3>Simran</h3>
+                        <p>Sales Officer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="team-card second">
+                <div class="card">
+                    <div class="image-section">
+                        <img src="pic1.jpg">
+                    </div>
+                    <div class="content">
+                        <h3>Shivam</h3>
+                        <p>Marketing Officer</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image-section">
+                        <img src="pic1.jpg">
+                    </div>
+                    <div class="content">
+                        <h3>Marcus</h3>
+                        <p>Marketing Officer</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image-section">
+                        <img src="pic1.jpg">
+                    </div>
+                    <div class="content">
+                        <h3>Steve</h3>
+                        <p>Marketing Officer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flag-container">
+                <div class="flag4"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
